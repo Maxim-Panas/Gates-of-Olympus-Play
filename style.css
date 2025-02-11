@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f4c542;
+}
+
+.bonus-btn {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+
+    background-color: #ffcc00;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bonus-btn:hover {
+    background-color: #ffaa00;
+}
+
+.intro, .game-table, .images {
+    padding: 20px;
+}
+
+h2 {
+    color: #f4c542;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #0f3460;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+th {
+    background-color: #f4c542;
+    color: black;
+}
+
+.images img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .images img {
+        width: 90%;
+    }
+}
+
+
+footer {
+    background-color: #16213e;
+    padding: 10px;
+    margin-top: 20px;
+}
