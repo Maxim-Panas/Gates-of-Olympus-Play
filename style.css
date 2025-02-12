@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f4c542;
+}
+
+.bonus-btn {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+
+    background-color: #ffcc00;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bonus-btn:hover {
+    background-color: #ffaa00;
+}
+
+.intro, .game-table, .images {
+    padding: 20px;
+}
+
+h2 {
+    color: #f4c542;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #0f3460;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+th {
+    background-color: #f4c542;
+    color: black;
+}
+
+/* Стилі для верхнього зображення */
+.image-top img {
+    width: 100%; /* Ширина на весь екран */
+    max-width: 600px; /* Максимальна ширина */
+    margin: 20px auto; /* Відцентрувати */
+    display: block; /* Блочне зображення */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тінь */
+}
+
+/* Стилі для нижнього зображення */
+.image-bottom img {
+    width: 100%; /* Ширина на весь екран */
+    max-width: 600px; /* Максимальна ширина */
+    margin: 20px auto; /* Відцентрувати */
+    display: block; /* Блочне зображення */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тінь */
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+    .image-top img, .image-bottom img {
+        width: 90%; /* Робимо ширину адаптивною для мобільних */
+    }
+}
+
+
+footer {
+    background-color: #16213e;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #f4c542;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #f4c542;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 20px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #1a1a2e;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+    height: 30%;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: #f4c542;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
