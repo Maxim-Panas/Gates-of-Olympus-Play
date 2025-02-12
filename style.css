@@ -178,7 +178,7 @@ footer {
     transform: translateX(-100%);
     transition: .3s;
     width: 200px;
-    height: 30%;
+    height: 40%;
   }
   .menu-item {
     display: block;
