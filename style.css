@@ -131,7 +131,7 @@ footer {
     position: relative;
     border: none;
     background: transparent;
-    width: 40px;
+    width: 30px;
     height: 26px;
   }
   .burger::before,
@@ -194,3 +194,11 @@ footer {
   .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
   }
+
+  section {
+    max-width: 1200px; /* Максимальна ширина секції */
+    margin: 0 auto; /* Центрує секцію по горизонталі */
+    padding: 0 20px; /* Відступи з боків */
+    box-sizing: border-box; /* Щоб padding не збільшував розмір елемента */
+}
+
