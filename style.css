@@ -86,31 +86,30 @@ th {
 
 /* Стилі для верхнього зображення */
 .image-top img {
-    width: 100%; /* Ширина на весь екран */
-    max-width: 600px; /* Максимальна ширина */
-    margin: 20px auto; /* Відцентрувати */
-    display: block; /* Блочне зображення */
-    border-radius: 10px; /* Закруглені кути */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тінь */
+    width: 100%; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    display: block; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Стилі для нижнього зображення */
 .image-bottom img {
-    width: 100%; /* Ширина на весь екран */
-    max-width: 600px; /* Максимальна ширина */
-    margin: 20px auto; /* Відцентрувати */
-    display: block; /* Блочне зображення */
-    border-radius: 10px; /* Закруглені кути */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тінь */
-}
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
 
 /* Адаптивність для мобільних */
 @media (max-width: 768px) {
     .image-top img, .image-bottom img {
-        width: 90%; /* Робимо ширину адаптивною для мобільних */
+        width: 90%; 
     }
 }
-
+}
 
 footer {
     background-color: #16213e;
@@ -198,9 +197,34 @@ footer {
 }
 
   section {
-    max-width: 1200px; /* Максимальна ширина секції */
-    margin: 0 auto; /* Центрує секцію по горизонталі */
-    padding: 0 20px; /* Відступи з боків */
-    box-sizing: border-box; /* Щоб padding не збільшував розмір елемента */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box;
 }
 
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25396f;
+  color: #f4c542;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #25396f;
+}
