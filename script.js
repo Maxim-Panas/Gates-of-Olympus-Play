@@ -1,5 +1,6 @@
 window.onload = function() {
   window.scrollTo(0, 0);
+  };
 
 // Показуємо кнопку при прокручуванні вниз
 window.onscroll = function() {
